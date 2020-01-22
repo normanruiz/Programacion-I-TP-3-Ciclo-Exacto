@@ -1,0 +1,292 @@
+% Declaracion del tipo de documento y parametros basicos de la hoja
+\documentclass[12pt,a4paper,twoside]{article}
+
+% Package: inputenc - Este paquete permite al usuario especificar una codificación de entrada
+\usepackage[utf8]{inputenc}
+
+% Package: Babel - Este paquete administra reglas tipográficas (y otras) determinadas culturalmente para una amplia gama de idiomas.
+%\usepackage[spanish]{babel}
+
+%
+\usepackage[T1]{fontenc}
+
+% Packages: amsmath - Se adapta para su uso en LaTeX la mayoría de las características matemáticas que se encuentran en AMS-TeX; Es altamente recomendado como complemento de la composición matemática seria en LaTeX.
+\usepackage{amsmath}
+
+%Package: enumerate - Este paquete le da al entorno de enumeración un argumento opcional lo que determina el estilo en el que se imprime el contador.
+\usepackage{enumerate}
+
+%Package: tabto - Se definen dos nuevos comandos de posicionamiento de texto: \tab y \tabto
+\usepackage{tabto}
+
+%
+\usepackage{amsfonts}
+
+%
+\usepackage{amssymb}
+
+% Este paquete permite la insercion de imagenes en el documento, con esta linea habilito la insercion de archivos .eps
+\usepackage[dvips]{graphicx}
+
+% 
+\usepackage{lettrine}
+
+%
+\usepackage{lmodern}
+
+% Establece los margenes de la hoja
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+
+% 
+\usepackage{pstricks,pst-node}
+
+%
+\usepackage{textcomp}
+
+% Con esta linea se declara el autor del documento
+\author{Norman Ruiz}
+
+% Con esta linea se declara el titulo del documento
+\title{TRABAJO PRACTICO \linebreak Nº 3 \linebreak (Ciclo Exacto)}
+
+%
+\usepackage[light]{draftcopy}
+%
+\draftcopyName{Norman Ruiz}{130}
+%
+\draftcopyFirstPage{2}
+
+\usepackage{fancyhdr}
+\lfoot[\today]{\today}
+\cfoot[\thepage]{\thepage}
+\rfoot[Norman Ruiz]{Norman Ruiz}
+\renewcommand{\footrulewidth}{.5pt}
+\lhead[]{}
+\chead[]{}
+\rhead[]{Trabajo Practico Nº 3 (Ciclo Exacto)}
+\renewcommand{\headrulewidth}{.5pt}
+\pagestyle{fancy}
+
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Ejercicio \textnumero 1}
+
+\hspace*{1cm}Hacer un programa para mostrar por pantalla los números del 1 al 10. El usuario no ingresará NADA en este programa.
+
+\newpage
+
+\section{Ejercicio \textnumero 2}
+
+\hspace*{1cm}Hacer un programa para mostrar por pantalla los números del 20 al 1 (en orden decreciente). El usuario no ingresará NADA en este programa.
+
+\newpage
+
+\section{Ejercicio \textnumero 3}
+
+\hspace*{1cm}Hacer un programa para que el usuario ingrese un número positivo y que luego se muestren por pantalla los números entre el 1 y el número ingresado por el usuario. Por ejemplo, si el usuario ingresa 15, se mostrarán los números entre el 1 y el 15.
+
+\newpage
+
+\section{Ejercicio \textnumero 4}
+
+\hspace*{1cm}Hacer un programa para que el usuario ingrese dos números y luego el programa muestre por pantalla los números entre el menor y el mayor de ambos. Por ejemplo, si el usuario ingresa 3 y 15, se mostrarán los números entre el 3 y el 15; y si el usuario ingresa 25 y 8, se mostrarán los números entre el 8 y el 25 (siempre se emiten en orden creciente).
+
+\newpage
+
+\section{Ejercicio \textnumero 5}
+
+\hspace*{1cm}Hacer un programa para que el usuario ingrese por teclado 25 números y que se vayan informando uno por uno aquellos que son mayores o iguales a 5.  Atención: Se pide que se informe cuales (y no cuantos) son mayores que 5. 
+
+\newpage
+
+\section{Ejercicio \textnumero 6}
+
+\hspace*{1cm}Hacer un programa para que el usuario ingrese por teclado 25 números y que se informe luego cuantos de esos 25 son mayores o iguales a 5. 
+
+\newpage
+
+\section{Ejercicio \textnumero 7}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado una lista de 10 números, luego determinar e  informar cuantos son positivos, cuantos son negativos, y cuantos iguales a cero. 
+
+\newpage
+
+\section{Ejercicio \textnumero 8}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el máximo. Suponer que los valores de la lista son todos positivos. 
+
+\newpage
+
+\section{Ejercicio \textnumero 9}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado 10 números enteros, luego determinar e informar el máximo y su posición. Suponer que los valores de la lista pueden ser todos positivos, todos negativos, ceros, o cualquier combinación.
+
+\newpage
+
+\section{Ejercicio \textnumero 10}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el máximo y el mínimo. Suponer que los valores de la lista pueden ser todos positivos, todos negativos, ceros, o cualquier combinación. 
+
+\newpage
+
+\section{Ejercicio \textnumero 11}
+
+\hspace*{1cm} Hacer un programa para ingresar por teclado 20 números, luego determinar e informar el máximo de los negativos y el mínimo de los positivos. Resolverlo de dos maneras:
+\begin{list}{•}{}
+\item \textbf{a}) Suponer que en la lista hay números positivos, negativos y ceros. 
+\item \textbf{b}) Suponer que en lista podría no haber números positivos o podría no haber números negativos, en ese caso debe indicarse tal situación con un cartel aclaratorio.
+\end{list}
+
+\newpage
+
+\section{Ejercicio \textnumero 12}
+
+\hspace*{1cm}Hacer un programa para ingresar un valor que indica la cantidad de números que componen una lista y luego solicitar se ingresen esos N números. Se pide informar cuantos son positivos.\\
+Por ejemplo, si se ingresa el valor 5 como cantidad de números, entonces el programa debe solicitar 5 números y contar cuantos son positivos. 
+
+\newpage
+
+\section{Ejercicio \textnumero 13}
+
+\hspace*{1cm} Hacer un programa para ingresar 5 números, luego informar los 2 mayores valores ingresados, aclarando cual es el máximo y cual el que le sigue.\\
+Por ejemplo si la lista ingresada es 10, 8 ,12, 14 ,3 el resultado será 14 y 12.\\
+Atención: si la lista ingresada es 14, 8 ,12, 14 ,3 el resultado será 14 y 14.\\
+Resolverlo de dos maneras: 
+\begin{list}{•}{}
+\item \textbf{a}) Suponer que los 5 números de la lista son todos positivos. 
+\item \textbf{b}) Suponer que los 5 números pueden ser todos positivos, todos negativos, ceros o cualquier  combinación de los anteriores.
+\end{list}
+
+\newpage
+
+\section{Ejercicio \textnumero 14}
+
+\hspace*{1cm} Hacer un programa para ingresar por teclado un número superior o igual a 1 y luego informar si el mismo es un número primo. 
+
+\newpage
+
+\section{Ejercicio \textnumero 15}
+
+\hspace*{1cm} Hacer un programa para leer tres números diferentes y determinar e informar el número del medio, es decir el que no es ni mayor ni menor. Suponer que los 3 números ingresados son siempre distintos. Ejemplo, si se ingresan 6, 10, 8, se emitirá 8.
+
+\newpage
+
+\section{Ejercicio \textnumero 16}
+
+\hspace*{1cm}Hacer un programa para ingresar una lista de 20 números y luego informar si todos están ordenados en forma creciente. Por ejemplo si la lista fuera:\\
+ 1, 5, 7, 15,.......................120 se emitirá un cartel que diga “Conjunto Ordenado”\\
+3, 1, 8, 0, -3.......................15 se emitirá un cartel que diga “Conjunto No Ordenado” 
+
+\newpage
+
+\section{Ejercicio \textnumero 17}
+
+\hspace*{1cm}Dada una lista de 7 números informar cual fue la ubicación del primer y segundo número impar ingresado.\\
+Por ejemplo  8,4,5,6,9,5,7 se informa 3º y 5º posición. 
+
+\newpage
+
+\section{Ejercicio \textnumero 18}
+
+\hspace*{1cm}Dada una lista de 8 números informar cual fue la ubicación del primer y último número impar ingresado.\\
+Por ejemplo  8,4,5,6,9,5,7,6 se informa 3º y 7º posición.
+
+\newpage
+
+\section{Ejercicio \textnumero 19}
+
+\hspace*{1cm}Dada una lista de 8 números informar el 1º par ingresado y el último de los nros. primos. \\
+Por ejemplo  7,4,5,6,9,13,10,6 se informa  4 y 13.\\
+Por ejemplo  9,7,5,21,9,13,15,6 se informa  6 y 13 (en este caso el primer par apareció después que el último primo) 
+
+\newpage
+\section{Ejercicio \textnumero 20}
+
+\hspace*{1cm}Hacer un programa para solicitar el ingreso de 10 ternas de números enteros positivos e ir mostrando para cada una de las ternas cual es el mayor número. 
+
+\newpage
+
+\section{Ejercicio \textnumero 21}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado una lista de 10 números. Se pide contar e informar la cantidad de pares positivos consecutivos cuya diferencia absoluta sea mayor que 5.\\
+Ejemplo: 12, -3, 4, 16, 8, -3, -5, 8, 10, 16.\\
+En esta lista existen 3 pares que cumplen esa condición: (4-16) (16-8) (10-16), por lo tanto el programa emitirá un 3 como resultado.\\
+Se sugiere consultar el ejercicio 7 del TP 2 referido a diferencia absoluta. 
+
+\newpage
+
+\section{Ejercicio \textnumero 22}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado el nombre, sueldo y la antigüedad de los 30 empleados de una empresa. Cada registro está compuesto por los siguientes datos: 
+\begin{list}{•}{}
+\item \textbf{}Número del empleado
+\item \textbf{}Sueldo
+\item \textbf{}Antigüedad 
+\end{list}
+Se pide determinar e informar: 
+\begin{list}{•}{}
+\item \textbf{a}) Cual es el número del empleado con mayor sueldo y cual es su antigüedad.
+\item \textbf{b}) Informar la antigüedad promedio de los empleados con sueldo mayor a \$3500.- 
+\end{list}
+
+\newpage{\ }
+\newpage
+
+\section{Ejercicio \textnumero 23}
+
+\hspace*{1cm}Se ingresan los datos con la producción de los operarios de una empresa en el último mes. Cada registro contiene:
+\begin{list}{•}{}
+\item \textbf{}Número de operario (1 a 20)
+\item \textbf{}Sector donde trabaja (1, 2, 3)
+\item \textbf{}Total de piezas defectuosas
+\item \textbf{}Total de piezas no defectuosas
+\end{list}
+Existe un total de 20 registros (uno para cada operario). Cada operario trabaja en alguno de los tres sectores 1, 2 ó 3.\\
+Se pide determinar e informar: 
+\begin{list}{•}{}
+\item \textbf{a}) Para cada uno de los 3 sectores el número del operario que obtuvo mayor cantidad de piezas defectuosas. (se emitirán 3 resultados: los números de operario para cada uno de los 3 sectores). 
+\item \textbf{b}) El sector cuyos empleados totalizaron mayor porcentaje de piezas defectuosas respecto al total de piezas fabricadas en ese sector. 
+\end{list}
+
+\newpage{\ }
+\newpage
+
+\section{Ejercicio \textnumero 24}
+
+\hspace*{1cm}Se ingresan los datos de los 10 artículos que venda una empresa. Cada registro contiene:
+\begin{list}{•}{}
+\item \textbf{}Número de artículo
+\item \textbf{}Precio Unitario
+\item \textbf{}Clase de artículo (‘a’, ‘b’, ‘c’)
+\end{list}
+Se pide determinar e informar: 
+\begin{list}{•}{}
+\item \textbf{a}) El número del artículo más caro de la clase ‘a’. Ídem para clase ‘b’ y ‘c’.
+\item \textbf{b}) La clase (‘a’, ‘b’ ó ‘c’) cuyos artículos totalicen el mayor precio promedio. (Se debe calcular el precio promedio por clase e informar cual de ellas es la que tiene mayor promedio) 
+\end{list}
+
+\newpage{\ }
+\newpage
+
+\section{Ejercicio \textnumero 25}
+
+\hspace*{1cm}Hacer un programa para ingresar una lista de 20 números. Se pide luego determinar e informar: 
+\begin{list}{•}{}
+\item \textbf{a}) La cantidad de ternas de valores positivos consecutivos. 
+\item \textbf{b}) La cantidad de ternas de valores negativos consecutivos y ordenados en forma creciente. 
+\end{list}
+Nota: si el número ingresado es cero, no se lo considera ni negativo ni positivo. Por ejemplo, dada la siguiente lista de 12 números:\\ 
+\hspace*{1cm}10, 5, 4, 3, -8, -3, -1, 0, 3, 8, -5, 8\\
+el programa detectará una terna de positivos consecutivos (10, 5, 4) y una terna de negativos consecutivos ordenados (-8, -3, -1). 
+
+\newpage{\ }
+\newpage
+
+\end{document}
